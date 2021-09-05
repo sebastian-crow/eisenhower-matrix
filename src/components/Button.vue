@@ -1,6 +1,6 @@
 <template>
     <button @click="onClick()" :style="{ background: color}" class="btn">
-        {{ text }}
+        <h1 class="text">{{ text }}</h1>
     </button>
 </template>
 
@@ -18,3 +18,10 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+    .text{
+        color:black;
+        font-size: 1.5rem;
+    }
+</style>

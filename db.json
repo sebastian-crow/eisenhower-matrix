@@ -1,40 +1,10 @@
 {
   "tasks": [
     {
-      "text": "sdsdsd",
-      "day": "sdsdsds",
-      "reminder": true,
-      "id": 2
-    },
-    {
-      "text": "fuck",
-      "day": "02/09/2021",
-      "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "sdsd",
-      "day": "sdsds",
-      "reminder": false,
-      "id": 4
-    },
-    {
       "text": "sdsddsd",
       "day": "sdsdsdsdsd",
       "reminder": false,
       "id": 5
-    },
-    {
-      "text": "sdsddsd",
-      "day": "sdsdsdsdsad",
-      "reminder": true,
-      "id": 6
-    },
-    {
-      "text": "sdds",
-      "day": "sddsd",
-      "reminder": false,
-      "id": 7
     }
   ]
 }

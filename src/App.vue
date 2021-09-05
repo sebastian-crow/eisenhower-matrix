@@ -2,9 +2,12 @@
   <div class="container">
     <Header 
       @toggle-add-task="toggleAddTask"
-      title="Task Tracker"
+      title="Tasks"
+      description="Eisenhower Matrix"
       :showAddTask="showAddTask"
     />
+    <br />
+    <br />
     <router-view :showAddTask="showAddTask"></router-view>
     <Footer />
   </div>
@@ -35,35 +38,39 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .container {
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 2px solid #730000;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .btn {
   display: inline-block;
-  background: #000;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+  border: 3px solid black;
+
+  position: relative;
+  width: 6.5rem;
+  height: 3rem;
+  
 }
 .btn:focus {
   outline: none;
