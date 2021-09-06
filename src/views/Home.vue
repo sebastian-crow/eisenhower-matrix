@@ -1,8 +1,10 @@
 <template>
     <AddTask v-show="showAddTask" @add-task="addTask"/>
+    <!-- @priorization="priorization" 
+    @toggle-reminder="toggleReminder"-->
     <Tasks 
-        @toggle-reminder="toggleReminder"
         @delete-task="deleteTask"
+        @edit-task="editTask"
         :tasks="tasks"
     />
 </template>
@@ -22,7 +24,7 @@
         },
         data() {
             return {
-                tasks: [],
+                tasks: []
             }
         },
         methods: {
@@ -40,8 +42,6 @@
                 this.tasks = [...this.tasks, data]
             },
             
-            
-
 
             async deleteTask(id) {
                 if(confirm('Are you sure?')) {
@@ -55,6 +55,16 @@
                 }
             },
 
+        /*
+            async editTask(id) {
+                console.log(id)
+                
+
+                
+            },
+        */
+
+        /*    
             async toggleReminder(id) {
                 const taskToToggle = await this.fetchTask(id)
                 const updTask = {...taskToToggle, reminder: !taskToToggle.reminder}
@@ -73,7 +83,28 @@
                     task.id === id ? {...task, reminder: data.reminder} : task
                 )
             },
+        */
+       /*
+            async toggleReminder(id) {
+                const taskToToggle = await this.fetchTask(id)
+                const updTask = {...taskToToggle, category: !taskToToggle.category.do_it}
+                
 
+                const res = await fetch(`api/tasks/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-type' : 'application/json',
+                    },
+                    body: JSON.stringify(updTask),
+                })
+
+                const data = await res.json()
+
+                this.tasks = this.tasks.map((task) =>
+                    task.id === id ? {...task, category: data.category} : task
+                )
+            },
+*/
             async fetchTasks() {
                 const res = await fetch('api/tasks')
 

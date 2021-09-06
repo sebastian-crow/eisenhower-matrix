@@ -1,10 +1,103 @@
 {
   "tasks": [
     {
-      "text": "sdsddsd",
-      "day": "sdsdsdsdsd",
-      "reminder": false,
+      "text": "sdsd",
+      "day": "dds",
+      "category": {
+        "do_it": true,
+        "schedule_it": false,
+        "delegate_it": false,
+        "delete_it": false
+      },
+      "id": 3
+    },
+    {
+      "text": "schedule_it",
+      "day": "asad",
+      "category": {
+        "do_it": false,
+        "schedule_it": true,
+        "delegate_it": false,
+        "delete_it": false
+      },
+      "id": 4
+    },
+    {
+      "text": "delegate_it",
+      "day": "",
+      "category": {
+        "do_it": false,
+        "schedule_it": false,
+        "delegate_it": true,
+        "delete_it": false
+      },
       "id": 5
+    },
+    {
+      "text": "delete_it",
+      "day": "sadad",
+      "category": {
+        "do_it": false,
+        "schedule_it": false,
+        "delegate_it": false,
+        "delete_it": true
+      },
+      "id": 6
+    },
+    {
+      "text": "sdsd",
+      "day": "sdsd",
+      "category": {
+        "do_it": true,
+        "schedule_it": false,
+        "delegate_it": false,
+        "delete_it": false
+      },
+      "id": 7
+    },
+    {
+      "text": "sdsd",
+      "day": "sdsd",
+      "category": {
+        "do_it": true,
+        "schedule_it": false,
+        "delegate_it": false,
+        "delete_it": false
+      },
+      "id": 8
+    },
+    {
+      "text": "sd|",
+      "day": "ddsds",
+      "category": {
+        "do_it": true,
+        "schedule_it": false,
+        "delegate_it": false,
+        "delete_it": false
+      },
+      "id": 9
+    },
+    {
+      "text": "sdds",
+      "day": "sdd",
+      "category": {
+        "do_it": false,
+        "schedule_it": false,
+        "delegate_it": true,
+        "delete_it": false
+      },
+      "id": 10
+    },
+    {
+      "text": "sdd",
+      "day": "melo",
+      "category": {
+        "do_it": false,
+        "schedule_it": true,
+        "delegate_it": false,
+        "delete_it": false
+      },
+      "id": 11
     }
   ]
 }

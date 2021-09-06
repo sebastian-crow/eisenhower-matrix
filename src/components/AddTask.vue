@@ -13,9 +13,12 @@
         placeholder="Add Day & Time"
       />
     </div>
+
     <div class="form-control form-control-check">
-      <label>Set Reminder</label>
-      <input type="checkbox" v-model="reminder" name="reminder" />
+      <input type="checkbox" v-model="category.do_it" name="category.do_it" />
+      <input type="checkbox" v-model="category.schedule_it" name="category.schedule_it" />
+      <input type="checkbox" v-model="category.delegate_it" name="category.delegate_it" />
+      <input type="checkbox" v-model="category.delete_it" name="category.delete_it" />
     </div>
 
     <input type="submit" value="Save Task" class="btn btn-block" />
@@ -29,7 +32,13 @@
             return {
                 text: '',
                 day: '',
-                reminder: false,
+                category: {
+                  do_it: false,
+                  schedule_it: false,
+                  delegate_it: false,
+                  delete_it: false
+                },
+                //reminder: false,
             }
         },
         methods: {
@@ -45,14 +54,21 @@
                     // id: Math.floor(Math.random() * 100000),
                     text: this.text,
                     day: this.day,
-                    reminder: this.reminder,
+                    //reminder: this.reminder,
+                    category: this.category
                 }
 
                 this.$emit('add-task', newTask)
 
                 this.text = ''
                 this.day = ''
-                this.reminder = false
+                //this.reminder = false
+                this.category = {
+                  do_it: false,
+                  schedule_it: false,
+                  delegate_it: false,
+                  delete_it: false
+                }
             },
         },
     }
@@ -87,5 +103,21 @@
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+
+.gategory_1 {
+  background-color: #D05454;
+}
+
+.gategory_2 {
+  background: #EAB15D;
+}
+
+.gategory_3 {
+  background: #EEEFA6;
+}
+
+.gategory_4 {
+  background: #C3C3C3;
 }
 </style>
