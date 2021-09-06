@@ -46,6 +46,8 @@ p {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.18em;
+  position: relative;
+  left: 2%;
 }
 
 h2 {

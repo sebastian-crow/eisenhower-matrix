@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1 class="title">
-      {{ title }}
+      <a href="/" class="a-title">{{ title }}</a>
     </h1>
 
     <br />
@@ -95,5 +95,10 @@ header {
   height: 48px;
   left: 85%;
   top: 30%;
+}
+
+.a-title {
+  text-decoration: none;
+  color: black;
 }
 </style>
